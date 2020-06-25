@@ -250,7 +250,10 @@ function draw(){
                 // sin vidas (0)
                 clearInterval(gameInterval);
                 // redraw = false;
-                alert("la bola se ha caido");
+                alert("La bola ha caido y esa era tu última vida :(");
+                if(confirm("¿Deseas volver a jugar?")){
+                    window.location.reload();
+                }
             }
         }   
     } else {
